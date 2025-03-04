@@ -10,7 +10,24 @@ public class Alarms
 {
 	public int countAlarms(int[] volume, int S)
 	{
-        return default(int);
+		int rounds = 0;
+        LinkedList<int> alarms = new LinkedList<int>();
+
+        foreach (int a in volume)
+        {
+            alarms.AddLast(a);
+        }
+
+        while (S > 0)
+        {
+            int nextAlarm = alarms.First.Value;
+            alarms.RemoveFirst();
+            S -= nextAlarm;
+            alarms.AddLast(nextAlarm);
+            rounds++;
+        }
+
+        return rounds;
 	}
 
 	#region Testing code
@@ -56,7 +73,7 @@ public class Alarms
 		Console.WriteLine("");
 		return res;
 	}
-	public static void Run() {
+	public static void Main(string[] args) {
 		Boolean all_right;
 		all_right = true;
 		
