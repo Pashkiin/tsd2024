@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Prices>
+  <Price>
+    <Date>2022-01-03T00:00:00</Date>
+    <Price>235.72</Price>
+  </Price>
+  <Price>
+    <Date>2022-01-04T00:00:00</Date>
+    <Price>236.56</Price>
+  </Price>
+  <Price>
+    <Date>2022-01-05T00:00:00</Date>
+    <Price>235.69</Price>
+  </Price>
+  <Price>
+    <Date>2022-01-07T00:00:00</Date>
+    <Price>232.4</Price>
+  </Price>
+  <Price>
+    <Date>2022-01-10T00:00:00</Date>
+    <Price>232.13</Price>
+  </Price>
+  <Price>
+    <Date>2022-01-11T00:00:00</Date>
+    <Price>231.13</Price>
+  </Price>
+</Prices>
