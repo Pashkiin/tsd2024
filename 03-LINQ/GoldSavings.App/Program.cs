@@ -173,7 +173,13 @@ class Program
         doc.Save("Prices.xml");
 
         // task 4
-        var prices = from elements in XElement.Load("Prices.xml").Elements("Prices") from price in elements.Elements("Price") select price;
+        Console.WriteLine("\nPrices from XML:");
+        var prices = from price in XElement.Load("Prices.xml").Elements("Price")
+             select new
+             {
+                 Date = price.Element("Date")?.Value,
+                 Price = price.Element("Price")?.Value
+             };
 
         foreach (var price in prices)
         {
