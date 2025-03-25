@@ -34,35 +34,20 @@ public class GoldClient
 
     public async Task<List<GoldPrice>> GetGoldPrices(DateTime startDate, DateTime endDate)
     {
-        const int maxDays = 93;
         string dateFormat = "yyyy-MM-dd";
-        List<GoldPrice> allPrices = new List<GoldPrice>();
-
-        DateTime currentStartDate = startDate;
-
-        while (currentStartDate <= endDate)
+        string requestUri = $"cenyzlota/{startDate.ToString(dateFormat)}/{endDate.ToString(dateFormat)}";
+        HttpResponseMessage responseMsg = _client.GetAsync(requestUri).GetAwaiter().GetResult();
+        if (responseMsg.IsSuccessStatusCode)
         {
-            DateTime currentEndDate = currentStartDate.AddDays(maxDays - 1);
-            if (currentEndDate > endDate)
-            {
-                currentEndDate = endDate;
-            }
-
-            string requestUri = $"cenyzlota/{currentStartDate.ToString(dateFormat)}/{currentEndDate.ToString(dateFormat)}";
-            HttpResponseMessage responseMsg = _client.GetAsync(requestUri).GetAwaiter().GetResult();
-            if (responseMsg.IsSuccessStatusCode)
-            {
-                string content = await responseMsg.Content.ReadAsStringAsync();
-                List<GoldPrice> prices = JsonConvert.DeserializeObject<List<GoldPrice>>(content);
-                if (prices != null)
-                {
-                    allPrices.AddRange(prices);
-                }
-            }
-            currentStartDate = currentEndDate.AddDays(1);
+            string content = await responseMsg.Content.ReadAsStringAsync();
+            List<GoldPrice> prices = JsonConvert.DeserializeObject<List<GoldPrice>>(content);
+            return prices;
+        }
+        else
+        {
+            return null;
         }
 
-        return allPrices;
     }
 
 }
