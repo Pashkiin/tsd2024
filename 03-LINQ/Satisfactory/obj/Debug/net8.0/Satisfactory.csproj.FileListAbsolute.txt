@@ -1,0 +1,15 @@
+/workspaces/tsd2024/03-LINQ/Satisfactory/bin/Debug/net8.0/Satisfactory
+/workspaces/tsd2024/03-LINQ/Satisfactory/bin/Debug/net8.0/Satisfactory.deps.json
+/workspaces/tsd2024/03-LINQ/Satisfactory/bin/Debug/net8.0/Satisfactory.runtimeconfig.json
+/workspaces/tsd2024/03-LINQ/Satisfactory/bin/Debug/net8.0/Satisfactory.dll
+/workspaces/tsd2024/03-LINQ/Satisfactory/bin/Debug/net8.0/Satisfactory.pdb
+/workspaces/tsd2024/03-LINQ/Satisfactory/obj/Debug/net8.0/Satisfactory.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/tsd2024/03-LINQ/Satisfactory/obj/Debug/net8.0/Satisfactory.AssemblyInfoInputs.cache
+/workspaces/tsd2024/03-LINQ/Satisfactory/obj/Debug/net8.0/Satisfactory.AssemblyInfo.cs
+/workspaces/tsd2024/03-LINQ/Satisfactory/obj/Debug/net8.0/Satisfactory.csproj.CoreCompileInputs.cache
+/workspaces/tsd2024/03-LINQ/Satisfactory/obj/Debug/net8.0/Satisfactory.sourcelink.json
+/workspaces/tsd2024/03-LINQ/Satisfactory/obj/Debug/net8.0/Satisfactory.dll
+/workspaces/tsd2024/03-LINQ/Satisfactory/obj/Debug/net8.0/refint/Satisfactory.dll
+/workspaces/tsd2024/03-LINQ/Satisfactory/obj/Debug/net8.0/Satisfactory.pdb
+/workspaces/tsd2024/03-LINQ/Satisfactory/obj/Debug/net8.0/Satisfactory.genruntimeconfig.cache
+/workspaces/tsd2024/03-LINQ/Satisfactory/obj/Debug/net8.0/ref/Satisfactory.dll
